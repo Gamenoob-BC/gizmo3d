@@ -4,7 +4,8 @@
 use pyo3::prelude::*;
 
 
-
+mod physics;
+mod audio;
 
 #[pymodule]
 fn gizmo_engine(_py: Python, m: &PyModule) -> PyResult<()> {
