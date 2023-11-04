@@ -2,9 +2,9 @@
 #![feature(custom_inner_attributes)]
 
 use pyo3::prelude::*;
-use wgpu::Instance as WgpuInstance;
-use physx::*;
-use cpal::traits::{DeviceTrait, HostTrait};
+
+
+
 
 #[pymodule]
 fn gizmo_engine(_py: Python, m: &PyModule) -> PyResult<()> {
@@ -13,11 +13,11 @@ fn gizmo_engine(_py: Python, m: &PyModule) -> PyResult<()> {
     Ok(())
 }
 #[pyfunction]
-fn create_game_object(name: &str)  {
+fn create_game_object(_name: &str)  {
 
 }
 
 #[pyfunction]
-fn move_game_object(name: &str, x: f32, y: f32, z: f32) {
+fn move_game_object(_name: &str, _x: f32, _y: f32, _z: f32) {
 
 }
